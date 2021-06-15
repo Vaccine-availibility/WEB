@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Products | Life Style Store</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Slot Availibility Checker</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://apisetu.gov.in/"><span class="glyphicon glyphicon-user"></span> API Setu</a></li>
+                        <li><a href="https://selfregistration.cowin.gov.in/"><span class="glyphicon glyphicon-log-in"></span> Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="content">
+
+            <!-- Jumbotron Header -->
+            <div class="jumbotron home-spacer" id="products-jumbotron">
+                <h1>Here You Can Check Slot Availibility by District ID</h1>
+                <p>We have all over INDIA'S District ID's</p>
+
+            </div>
+            <hr>
+            <div class="id">
+                <a href="ID_Excel_File.htm" class="ID"><span class="glyphicon glyphicon-circle-arrow-right">Check your District ID here<span class="glyphicon glyphicon-circle-arrow-left"></span></span></a>
+
+            </div>
+            <hr>
+            
+            <div class="input">
+                <center>
+                    <div id="banner_content">
+                        <h1>Check Slot Availibility</h1>
+                        <br>
+                        <input type="number" placeholder="Enter your district id here" class="inp">
+                        <br><br>
+                        <input type="button" id='script' name="scriptbutton" value="Submit" onclick="exec('python E:\PBL\vaccine.py')";>
+                        <br><br>
+                        <!-- <button class="btn btn-warning"><a href="vaccine.py"></a></button> -->
+                    </div>
+                </center>
+            </div>
+            
+            <!-- <div class="row text-center" id="cameras">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/5.jpg" alt="">
+                        <div class="caption">
+                            <h3>Cannon EOS </h3>
+                            <p>Price: Rs. 36000.00 </p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/2.jpg" alt="">
+                        <div class="caption">
+                            <h3>Nikon EOS </h3>
+                            <p>Price: Rs. 40,000.00 </p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/3.jpg" alt="">
+                        <div class="caption">
+                            <h3>Sony DSLR</h3>
+                            <p>Price: Rs. 50000.00</p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/4.jpg" alt="">
+                        <div class="caption">
+                            <h3>Olympus DSLR</h3>
+                            <p>Price: Rs. 50000.00</p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row text-center" id="watches">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/18.jpg" alt="">
+                        <div class="caption">
+                            <h3>Titan Model #301 </h3>
+                            <p>Price: Rs. 13000.00 </p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/19.jpg" alt="">
+                        <div class="caption">
+                            <h3>Titan Model #201</h3>
+                            <p>Price: Rs. 3000.00 </p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/20.jpg" alt="">
+                        <div class="caption">
+                            <h3>HMT Milan</h3>
+                            <p>Price: Rs. 8000.00 </p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/21.jpg" alt="">
+                        <div class="caption">
+                            <h3>Faber Luba #111 </h3>
+                            <p>Price: Rs. 18000.00 </p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="shirts">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/22.jpg" alt="">
+                        <div class="caption">
+                            <h3>H&W </h3>
+                            <p>Price: Rs. 800.00 </p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/23.jpg" alt="">
+                        <div class="caption">
+                            <h3>Luis Phil</h3>
+                            <p>Price: Rs. 1000.00</p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/24.jpg" alt="">
+                        <div class="caption">
+                            <h3>John Zok</h3>
+                            <p>Price: Rs. 1500.00</p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/25.jpg" alt="">
+                        <div class="caption">
+                            <h3>Jhalsani</h3>
+                            <p>Price Rs. 1300.00</p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div> -->
+        <footer>
+            <div class="container">
+                <center>
+                    <p>This Website is Made by Group no. 4 PBL by Students of PICT DIV 8</p>	
+                </center>
+            </div>
+        </footer>
+    </body>
+    <!-- <div>
+        <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>
+            function goPython(){
+
+                $.ajax({
+                    url: "vaccine.py"
+                    context: document.body
+                }).done(function() {
+                alert('finished python script');;
+                });
+            }
+        </script>
+    </div> -->
+</html>
